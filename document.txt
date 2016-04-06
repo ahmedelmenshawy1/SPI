@@ -1,0 +1,8 @@
+The interconnection between Master and Slave CPUs with SPI is shown in Figure 66. The system
+consists of two Shift Registers, and a Master clock generator. The SPI Master initiates the
+communication cycle when pulling low the Slave Select SS pin of the desired Slave. Master and
+Slave prepare the data to be sent in their respective Shift Registers, and the Master generates
+the required clock pulses on the SCK line to interchange data. Data is always shifted from Master
+to Slave on the Master Out – Slave In, MOSI, line, and from Slave to Master on the Master In
+– Slave Out, MISO, line. After each data packet, the Master will synchronize the Slave by pulling
+high the Slave Select, SS, line.
